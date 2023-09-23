@@ -25,7 +25,8 @@ public class EDefterCreatorAll {
 	private static List<EDefterBaslik> edefterList = new ArrayList<>();
 	public static void main(String[] args){
 		String[] fileExtensions = {"csv"};
-		File directory = new File(args[0]);
+		String fileName = args.length > 0 ? args[0] : "./edefter";
+		File directory = new File(fileName);
 		for (Iterator<File> files = FileUtils.iterateFiles(directory, fileExtensions, false); files.hasNext();) {
 			File file = files.next();
 			System.out.println(file.getName() + " olusturuluyor");
