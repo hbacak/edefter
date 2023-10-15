@@ -147,10 +147,10 @@ public abstract class TediyeCariMagazaAbstract extends Tediye {
 		String borcHesap = "";
 		if (kdvOrani == 1) {
 			borcHesap = "19101001";
-		} else if(kdvOrani == 8) {
-			borcHesap = "19101008";
-		} else if(kdvOrani == 18) {
-			borcHesap = "19101018";
+		} else if(kdvOrani == 8 || kdvOrani == 10) {
+			borcHesap = "19101010";
+		} else if(kdvOrani == 18 || kdvOrani == 20) {
+			borcHesap = "19101020";
 		}
 		return borcHesap;
 	}

@@ -65,7 +65,7 @@ public abstract class TahsilatPesin extends Tahsilat {
 		
 		if(getNetTutar8() > 0) {
 			detay = new EDefterDetay(
-					getAlacakHesapNet(8), 	//alt hesap kodu
+					getAlacakHesapNet(10), 	//alt hesap kodu
 					0,						//borc
 					getNetTutar8(),			//alacak
 					getRef(),				//dokuman no
@@ -77,7 +77,7 @@ public abstract class TahsilatPesin extends Tahsilat {
 			detayList.add(detay);
 			if(getKdv8() > 0) {
 				detay = new EDefterDetay(
-						getAlacakHesapKDV(8), 	//alt hesap kodu
+						getAlacakHesapKDV(10), 	//alt hesap kodu
 						0,						//borc
 						getKdv8(),				//alacak
 						getRef(),				//dokuman no
@@ -92,7 +92,7 @@ public abstract class TahsilatPesin extends Tahsilat {
 		
 		if(getNetTutar18() > 0) {
 			detay = new EDefterDetay(
-					getAlacakHesapNet(18), 	//alt hesap kodu
+					getAlacakHesapNet(20), 	//alt hesap kodu
 					0,						//borc
 					getNetTutar18(),		//alacak
 					getRef(),				//dokuman no
@@ -105,7 +105,7 @@ public abstract class TahsilatPesin extends Tahsilat {
 			
 			if(getKdv18() > 0) {
 				detay = new EDefterDetay(
-						getAlacakHesapKDV(18), 	//alt hesap kodu
+						getAlacakHesapKDV(20), 	//alt hesap kodu
 						0,						//borc
 						getKdv18(),				//alacak
 						getRef(),				//dokuman no

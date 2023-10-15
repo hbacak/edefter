@@ -165,7 +165,7 @@ public abstract class EDefterAbstract {
 	}
 
 	public double getNetTutar8() {
-		return HuzurNumberUtils.round(getBrutTutar8() / 1.08, 2);
+		return HuzurNumberUtils.round(getBrutTutar8() / 1.10, 2);
 	}
 
 	public double getKdv8() {
@@ -177,7 +177,7 @@ public abstract class EDefterAbstract {
 	}	
 	
 	public double getNetTutar18() {
-		return HuzurNumberUtils.round(getBrutTutar18() / 1.18, 2);
+		return HuzurNumberUtils.round(getBrutTutar18() / 1.20, 2);
 	}
 
 	public double getKdv18() {

@@ -101,7 +101,7 @@ public class VerilenIMF extends EDefterAbstract {
 		String alacakHesap = getAlacakHesap();
 		if(getNetTutar8() > 0) {
 			detay = new EDefterDetay(
-					getBorcHesapNet(8),			//alt hesap kodu
+					getBorcHesapNet(10),			//alt hesap kodu
 					getNetTutar8(),				//borc
 					0,							//alacak
 					getRef(),					//dokuman no
@@ -113,7 +113,7 @@ public class VerilenIMF extends EDefterAbstract {
 			detayList.add(detay);
 			if(getKdv8() > 0) {
 				detay = new EDefterDetay(
-						getBorcHesapKDV(8),			//alt hesap kodu
+						getBorcHesapKDV(10),			//alt hesap kodu
 						getKdv8(),					//borc
 						0,							//alacak
 						getRef(),					//dokuman no
@@ -128,7 +128,7 @@ public class VerilenIMF extends EDefterAbstract {
 		
 		if(getNetTutar18() > 0) {
 			detay = new EDefterDetay(
-					getBorcHesapNet(18),		//alt hesap kodu
+					getBorcHesapNet(20),		//alt hesap kodu
 					getNetTutar18(),			//borc
 					0,							//alacak
 					getRef(),					//dokuman no
@@ -141,7 +141,7 @@ public class VerilenIMF extends EDefterAbstract {
 			
 			if(getKdv18() > 0) {
 				detay = new EDefterDetay(
-						getBorcHesapKDV(18),		//alt hesap kodu
+						getBorcHesapKDV(20),		//alt hesap kodu
 						getKdv18(),					//borc
 						0,							//alacak
 						getRef(),					//dokuman no

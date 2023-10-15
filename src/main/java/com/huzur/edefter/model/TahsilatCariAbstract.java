@@ -18,6 +18,7 @@ public abstract class TahsilatCariAbstract extends Tahsilat {
 		olusturMagaza(ref);
 		setYAG(yymmgg);
 		this.kdvOrani = kdvOrani;
+		//TODO buraya ne yapilacak
 		if (kdvOrani == 8) {
 			setOran8(1);
 			setOran18(0);
@@ -117,7 +118,7 @@ public abstract class TahsilatCariAbstract extends Tahsilat {
 	
 				if(getKdv8() > 0) {
 					detay = new EDefterDetay(
-							getAlacakHesapKDV(8), 	// alt hesap kodu
+							getAlacakHesapKDV(10), 	// alt hesap kodu
 							0, 						// borc
 							getKdv8(), 				// alacak
 							getRef(), 				// dokuman no
@@ -145,7 +146,7 @@ public abstract class TahsilatCariAbstract extends Tahsilat {
 	
 				if(getKdv18() > 0) {
 					detay = new EDefterDetay(
-							getAlacakHesapKDV(18), 	// alt hesap kodu
+							getAlacakHesapKDV(20), 	// alt hesap kodu
 							0, 						// borc
 							getKdv18(), 			// alacak
 							getRef(), 				// dokuman no

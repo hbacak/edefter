@@ -26,10 +26,12 @@ public class TediyeCariMagaza extends TediyeCariMagazaAbstract {
 	@Override
 	public String getAlacakHesapKDV(int kdvOrani) {
 		String alacakHesap = "";
-		if (kdvOrani == 8) {
-			alacakHesap = "19101008";
+		if (kdvOrani == 8 || kdvOrani == 10) {
+			alacakHesap = "19101010";
 		} else if (kdvOrani == 1) {
 			alacakHesap = "19101001";
+		} else if (kdvOrani == 18 || kdvOrani == 20) {
+			alacakHesap = "19101020";
 		} else {
 			alacakHesap = "??????????";
 		}

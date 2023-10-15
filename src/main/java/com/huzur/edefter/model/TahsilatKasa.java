@@ -24,8 +24,8 @@ public class TahsilatKasa extends TahsilatCariAbstract {
 	@Override
 	public String getAlacakHesapKDV(int kdvOrani) {
 		String alacakHesap = "";
-		if(kdvOrani == 8) {
-			alacakHesap = "39101008";
+		if(kdvOrani == 8 || kdvOrani == 10) {
+			alacakHesap = "39101010";
 		} else {
 			alacakHesap = "39101001";
 		}

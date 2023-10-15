@@ -25,11 +25,13 @@ public class TahsilatCari extends TahsilatCariAbstract {
 	@Override
 	public String getAlacakHesapKDV(int kdvOrani) {
 		String alacakHesap = "";
-		if (kdvOrani == 8) {
-			alacakHesap = "39101008";
+		if (kdvOrani == 8 || kdvOrani == 10) {
+			alacakHesap = "39101010";
 		} else if (kdvOrani == 1) {
 			alacakHesap = "39101001";
-		} else {
+		} else if (kdvOrani == 18 || kdvOrani == 20) {
+			alacakHesap = "39101020";
+		}else {
 			alacakHesap = "??????????";
 		}
 		return alacakHesap;
